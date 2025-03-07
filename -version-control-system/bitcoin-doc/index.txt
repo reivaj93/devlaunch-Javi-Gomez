@@ -1,0 +1,11 @@
+¿Que es bitcoin?
+
+Bitcoin es una criptomoneda o moneda digital que funciona sin un banco central o una autoridad gubernamental. Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
+
+Características principales de Bitcoin:
+Descentralización: No está controlado por ningún gobierno o entidad financiera.
+Blockchain: Usa una tecnología de contabilidad distribuida donde todas las transacciones quedan registradas de manera segura y transparente.
+Oferta limitada: Solo existirán 21 millones de bitcoins, lo que lo hace escaso y potencialmente valioso.
+Anonimato relativo: Las transacciones no requieren datos personales, aunque son públicas en la blockchain.
+Seguridad: Usa criptografía avanzada para evitar fraudes y falsificaciones.
+Bitcoin se usa como inversión, como medio de pago en algunos comercios y como una alternativa a las monedas tradicionales en países con economías inestables.
