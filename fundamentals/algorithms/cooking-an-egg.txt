@@ -1,0 +1,38 @@
+Proporcinar una explicacion detallada en un archivo .txt de las acciones a realizar al cocinar un huevo.
+
+Solucion:
+
+
+Abrir la refrigeradora y sacar los ingredientes.
+
+La cocina esta encendida?
+
+Si- Continuar con el proceso
+No- Prender la cocina 
+
+Se quiere el huevo frito?
+
+Si- Continuar con el proceso
+No- Sacar una taza para batirlo
+
+Colocar sarten en el disco de la cocina
+Colocar aceite al sarten.
+Colocar huevo en sarte.
+
+Se quiere con sal?
+
+Si- Agregar sal a gusto
+No- Proseguir el proceso
+
+Se quiere yema suave?
+
+Si-Sacar al poco tiempo sin voltearlo.
+No-Dejarlo mas tiempo y voltearlo.
+
+Sacar un plato para servir
+Colocar el huevo en el plato
+
+Lavar los utensilios utilzados. 
+
+
+
