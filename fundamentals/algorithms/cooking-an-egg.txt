@@ -1,0 +1,27 @@
+Proporcionar una explicacion detallada en un archivo .txt de como cocinar un huevo.
+
+Solucion:
+
+Abrir refrigeradora
+
+Hay huevos?
+
+Si- Sacar el numero de huevos deseados a cocinar.
+No- Comprar huevos y mientras tanto cocinar otra cosa.
+
+Encender la cocina para ir precalentando.
+Abrir la puerta del trastero.
+Sacar un sarten
+Colocarlo en la cocinia
+Abrir la refrigeradora y sacar el aceite
+Colocar el aceite en el sarten.
+
+Desea huevos fritos?
+
+Si- Romper el huevo en uno de los bordes del sarten y vertirlo en el mismo.
+No- Sacar una taza para batirlo, una vez batido vertirlo
+
+Cocinar el huevo hasta el punto deseado
+
+Sacar un plato
+Servir el huevo en el plato

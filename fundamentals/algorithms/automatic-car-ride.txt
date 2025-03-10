@@ -1,0 +1,35 @@
+Proporciona una explicacion detallada en una archivo .txt de las cciones que realizarias al prepararte  
+para conducir un coche automatico.
+
+Este ejercicio esta disenado para ayudarte a entender los conceptos basicos de los algoritmos al darte un ejemplo del mundo real sobre como llevar tu cocher
+a dar un paseo.
+
+Ir por las llaves
+
+El coche esta abierto?
+
+si- continuar proceso
+no- abrir el coche
+
+abrir la puerta del conductor
+abrir la tapa del motor
+revisar los liquidos y estado del coche
+cerrar la tapa
+entrar al coche
+
+El coche es de llave?
+
+si- insertar llave y encender el coche
+no- colocar llave en el spot y presionar el boton de encendido.
+
+Alguien mas usa el coche?
+
+Si- Acomodar el asiento y espejos
+No- Continuar el proceso
+
+Colocarse el cinturon.
+
+El carro ocupa salir el reversa?
+
+Si- Colocar el carro en R y salir.
+No- Colocar el carro en D y salir.
