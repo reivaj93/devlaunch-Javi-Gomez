@@ -23,4 +23,4 @@ const maxDigits = 2;
 
 const BMI = weight / (height * height);
 
-console.log (`Hola ${name}, tu IMC es de ~${BMI.toFixed(maxDigits)}`); 
+console.log (`Hola ${name}, tu IMC es de ~${BMI.toFixed(maxDigits)}`);  
