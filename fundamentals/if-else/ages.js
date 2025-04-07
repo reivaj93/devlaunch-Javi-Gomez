@@ -17,7 +17,7 @@ const prompt = require('prompt-sync')();
 
 let edad = parseInt(prompt('Enter an age: '));
 
-let mensaje = 
+let mensaje =
     edad >= 0 &&  edad < 2 ? "You are a baby" :
     edad >= 3 &&  edad < 13 ? "You are a child" :
     edad >= 14 && edad < 17 ? "You are a teenager" :
@@ -28,6 +28,8 @@ let mensaje =
     "The institution does not support your age, please try again.";
 
     console.log(mensaje);
+
+    
 
    
 
