@@ -55,6 +55,8 @@ this.transfer = (amount, toAccount) => {
 
 const acc1 = new Account(1,'Javi', 10000)
 const acc2 = new Account(2,'Luis', 5000)
+
+
 console.log(acc1)
 console.log (acc1.deposit(5555))
 console.log (acc1.withdraw(5000))
