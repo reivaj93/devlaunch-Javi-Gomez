@@ -20,23 +20,26 @@ transfer(toAccount, amount): transfiere fondos de la cuenta actual a otra cuenta
 
 */
 
-interface Account {
+interface AccountShape {
     id: number
     name: string
     balance:number
+    deposit: (amount: number) => void
+    withdraw: (amount: number) => number | null
+    transfer: (amount: number, toAccount: AccountShape) => AccountShape | null
 }
 
-function Account (Account = 0) {
+const Account = function (id:number, name:string, balance:number = 0) {
     this.id = id
     this.name = name
     this.balance = balance
 
-this.deposit = (amount) => {
+this.deposit = (amount: number) => {
     this.balance += amount
     return this
 }
 
-this.withdraw = (amount) => {
+this.withdraw = (amount: number) => {
     if (this.balance >= amount) {
         this.balance -=amount
     } else{
@@ -44,7 +47,7 @@ this.withdraw = (amount) => {
     }
 }
 
-this.transfer = (amount, toAccount) => {
+this.transfer = (toAccount: AccountShape, amount: number) => {
     if (this.balance >= amount) {
         this.balance -=amount
         
@@ -52,15 +55,10 @@ this.transfer = (amount, toAccount) => {
         toAccount.balance += amount
 
     return this
+}}}
 
-
-}
-
-}
-}
-
-const acc1 = new Account(1,'Javi', 10000)
-const acc2 = new Account(2,'Luis', 5000)
+const acc1 : AccountShape = new (Account as any)(1,'Javi', 10000)
+const acc2 : AccountShape = new (Account as any)(2,'Luis', 5000)
 
 
 console.log(acc1)
