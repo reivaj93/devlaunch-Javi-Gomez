@@ -83,5 +83,3 @@ console.log (l1.toString())
 const l2 = new Elephant (`Dumbo`, `Mamifero`,8,'small')
 console.log (l2.sonido())
 console.log (l2.print())
-
-
