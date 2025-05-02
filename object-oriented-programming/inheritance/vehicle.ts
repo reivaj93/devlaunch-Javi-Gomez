@@ -12,74 +12,68 @@ Las motocicletas pueden tener un sidecar y deben poder hacer una acrobacia en un
 */
 
 class Vehicle {
+    private isOn :boolean
     constructor(
-    protected type : string,
-    protected structure : string,
+    protected emoji : string,
+    protected brand : string,
+    protected model : string,
+    protected year : number
     
     ){
-        this.type = type,
-        this.structure = structure
+        this.emoji = emoji
+        this.brand = brand
+        this.model = model 
+        this.year = year
+        this.isOn = false
     }
 
 
     toString(){
     return `
-    type:${this.type},
-    structure:${this.structure}
-    `
+    Name: ${this.emoji}\n Brand: ${this.brand}\n Mode: ${this.model}\n Year: ${this.year}`
+    
 }
      startEngine(){
-        return 'apagado'
+       this.isOn = true
     }
 
 }
 
 class Car extends Vehicle{
+    private isAirOn: boolean
     constructor(
-        type:string,
-        structure:string,
-        doorNumber : number
+         brand:string,
+         model:string,
+         year : number,
+         private doorNumber: number = 4,
     )
     {
-        super(type,structure)
-    }
-
-    doorNumber(doorNumber:number){
-        return doorNumber
-    }
-
-    airCondition(){
-        return false
+        super('🚗', brand, model, year)
+        this.doorNumber = doorNumber
+        this.isAirOn = false
     }
 
 }
 
 class Motocycle extends Vehicle{
+    private wheelie : boolean
     constructor(
-        type: string,
-        structure: string,
-        sideCar: boolean,
+        brand: string,
+        model: string,
+        year: number,
+        private sideCar: boolean 
     ) {
-        super(type, structure);
+        super('🏍️',brand, model, year);
+        this.sideCar = sideCar
+        this.wheelie = true
+
     }
 
-    sideCar() {
-        return this.sideCar; 
-    }
-
-    wheliee() {
-        return true;
-    }
 }
 
-const car1 = new Car (`Sedan`,`4x2`,5)
-console.log (car1.airCondition())
-console.log (car1.toString())
+const car1 = new Car ('Chery', 'Icar03', 2024)
+const mtc1 =new Motocycle('Yamaha', '350',2021, true)
 
-const mot1 = new Motocycle(`Harley`,`2x2`,false)
-console.log (mot1.sideCar())
-console.log (mot1.wheliee())
-
-
-
+console.log(car1.toString())
+console.log(mtc1.toString())
 
