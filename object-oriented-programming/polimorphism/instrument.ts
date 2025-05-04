@@ -1,4 +1,4 @@
-type InstrumentType = 'viento' | 'cuerda'
+type InstrumentType = 'viento' | 'cuerda' | 'percusion'
 
 abstract class Instrument {
     constructor(public type: InstrumentType){}
@@ -29,13 +29,18 @@ class Flute extends Instrument {
 }
 
 class Drums extends Instrument{
+    constructor(){
+        super('percusion')
+   
+  }
   play(){
     console.log('boom boom')
-  }
+}
 }
 
 const guitar1 = new Guitar()
 const flute1 = new Flute()
+const drums1 = new Drums()
 
 guitar1.play()
 flute1.play()
@@ -53,5 +58,6 @@ const artist1 = new Artist()
 
 artist1.playInstrument(guitar1)
 artist1.playInstrument(flute1)
+artist1.playInstrument(drums1)
 
 
