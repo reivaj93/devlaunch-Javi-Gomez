@@ -14,3 +14,28 @@ O sea no es valido que la funcion contenga ningun console.log dentro, solo es po
 2 is even 
 and so on
 */
+function classifyNumber (n:number): string {
+    let result ='';
+
+
+    for (let i = 1; i<n; i++){
+        if (i % 1 === 0){
+           const isEven = i % 2 ===0
+           result += `${i} is ${isEven ? 'even' : 'odd'}\n`;
+        }
+
+        
+    }
+
+    return result;
+    
+}
+
+console.log(classifyNumber(100))
+
+
+  
+
+
+//for (let i = 1; i<=10; i++){
+//    console.log(i)
