@@ -16,3 +16,39 @@ Pero mayormente dara numeros positivos que negativos en ganancias porque recuerd
 "La casa (casino) nunca pierde.."
 
 */
+
+function gameLoop(): void {
+    const rounds: number = 50;
+    let casinoBox: number = 0; 
+    const winningNumber: number = 10;
+    const losingNumber: number = 15;
+
+    function diceRoll(): number {
+        return Math.floor(Math.random() * 6) + 1;
+    }
+
+    for (let i = 0; i < rounds; i++) {
+        const dice1 = diceRoll();
+        const dice2 = diceRoll();
+        const dice3 = diceRoll();
+        const diceTotal = dice1 + dice2 + dice3;
+
+        if (diceTotal >= winningNumber) {
+            casinoBox += winningNumber; 
+        } else {
+            casinoBox -= losingNumber; 
+        }
+
+        console.log(
+            `Ronda ${i + 1}: Dados = [${dice1}, ${dice2}, ${dice3}], Total = ${diceTotal}, Caja = ${casinoBox}` /*Comprobacion de resultados*/
+        );
+    }
+
+    console.log(`Ganancias del casino: ${casinoBox}`);
+}
+
+
+gameLoop();
+
+
+  
