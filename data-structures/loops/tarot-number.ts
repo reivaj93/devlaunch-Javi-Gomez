@@ -21,3 +21,53 @@ Aunque podrias recibir una como 12/12/10000 -> 7, ya que podria ser alguien del 
 
 */
 
+const MIN_MONTHS = 1;
+const MAX_MONTHS = 12;
+const MIN_DAYS = 1;
+const MAX_DAYS = 31;
+const MIN_YEAR = 1;
+const MAX_YEAR = 9999;
+const MAX_SUM = 10;
+
+const isValidDate= (day : number, month: number, year:number): boolean => {
+    if(month < MIN_MONTHS || month > MAX_MONTHS || day < MIN_DAYS || day> MAX_DAYS || year < MIN_YEAR || year > MAX_YEAR){
+        return false;
+    }   
+
+
+const daysInMonths : number = new Date(year, month, 0).getDate();
+    return day <= daysInMonths;
+
+}
+
+const sumDigits = (num: number): number => {
+    let sum: number = 0;
+
+    while(num > 0) {
+        sum += num % MAX_SUM
+        num = Math.floor(num / MAX_SUM);
+    }
+
+    return sum
+
+}
+
+ 
+const calculateTarotNumber = (day: number, month: number, year: number): number => {
+    let totalNumbers: number = day + month + year 
+
+
+    while (totalNumbers > MAX_SUM) {
+        totalNumbers = sumDigits(totalNumbers);
+}
+    return totalNumbers;
+
+    
+}
+
+
+console.log("El numero de Tarot es: ", calculateTarotNumber(4, 11, 1993));
+console.log("El numero de Tarot es: ", calculateTarotNumber(27, 8, 1997));
+
+
+
