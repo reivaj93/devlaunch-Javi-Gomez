@@ -23,3 +23,46 @@ habido un empate entre los perros.
 Tenemos un empate!
 
 */
+
+function gameLoop(): void{
+
+let dogSteps = ():number =>  Math.floor(Math.random() * 3) + 1; 
+const trackLength: number = 20
+const trackFinish: number = 0;
+let dog1Position: number = trackLength;
+let dog2Position: number = trackLength;
+let dog1: string = "🐕"
+let dog2: string = "🐩"
+let pawPrint: string = "🐾"
+let pathPrint: string = "-"
+
+   const drawTrack = (position: number, dog: string): string => {
+        const safePos = Math.max(0, position); 
+        const beforeDog = pathPrint.repeat(safePos); 
+        const afterDog = pawPrint.repeat(trackLength - safePos); 
+        return `🏁|${beforeDog}${dog}${afterDog}|`;
+    };
+
+    while (true) {
+        console.log(drawTrack(dog1Position, dog1));
+        console.log(drawTrack(dog2Position, dog2));
+
+        dog1Position -= dogSteps();
+        dog2Position -= dogSteps();
+
+        if (dog1Position <= trackFinish && dog2Position <= trackFinish) {
+            console.log("Tenemos un empate!");
+            break;
+        } else if (dog1Position <= trackFinish) {
+            console.log("¡El perro 1 ha ganado!");
+            break;
+        } else if (dog2Position <= trackFinish) {
+            console.log("¡El perro 2 ha ganado!");
+            break;
+        }
+    }
+
+    console.log("¡La carrera ha terminado!");
+}
+
+gameLoop();
