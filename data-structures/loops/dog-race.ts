@@ -34,7 +34,7 @@ let dog2Position: number = trackLength;
 let dog1: string = "🐕"
 let dog2: string = "🐩"
 let pawPrint: string = "🐾"
-let pathPrint: string = "-"
+let pathPrint: string = "--"
 
    const drawTrack = (position: number, dog: string): string => {
         const safePos = Math.max(0, position); 
