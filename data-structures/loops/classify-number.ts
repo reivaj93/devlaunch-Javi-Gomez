@@ -23,8 +23,7 @@ function classifyNumber (n:number): string {
            const isEven = i % 2 ===0
            result += `${i} is ${isEven ? 'even' : 'odd'}\n`;
         }
-
-        
+   
     }
 
     return result;
