@@ -24,3 +24,5 @@ const arraySum = (arr1:number[],arr2: number[]): number [] =>{
 
 
 }
+
+console.log(arraySum([1,0,2,3,4], [3,5,6,7,8,13]))
